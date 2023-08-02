@@ -27,10 +27,12 @@ class ViewController: UIViewController {
         button.addTarget(self, action: #selector(addButtonTapped), for: .touchUpInside)
         return button
     }()
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+        print("hello waldi")
     }
 
     private func setupUI() {
@@ -39,6 +41,7 @@ class ViewController: UIViewController {
 
         tableView.frame = CGRect(x: 0, y: 0, width: view.bounds.width, height: view.bounds.height - 50)
         addButton.frame = CGRect(x: 0, y: view.bounds.height - 50, width: view.bounds.width, height: 50)
+        print("hello waldi")
     }
 
     @objc private func addButtonTapped() {
@@ -53,6 +56,7 @@ class ViewController: UIViewController {
             }
         })
         present(alert, animated: true, completion: nil)
+        print("hello waldi")
     }
 }
 
